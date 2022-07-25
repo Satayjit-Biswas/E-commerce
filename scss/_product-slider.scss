@@ -1,0 +1,153 @@
+.product_area{
+	padding: 5.5rem 0 10rem;
+	.lg_gutter{
+		>div{
+			margin-top: 4rem;
+		}
+	}
+	.product_slider{
+		margin-top: 3rem;
+		@media #{$md}{
+			margin-right: -37px;
+			width: calc(100% + 37px);
+			.owl-stage{
+				padding-left: 0 !important;
+			}
+		}
+		@media #{$sm}{
+			margin-right: -3rem;
+			width: calc(100% + 3rem);
+		}
+	}
+}
+.filter_wrap{
+	padding-top: 0.5rem;
+	>div{
+		margin-top: 2rem;
+	}
+	@media #{$sm}{
+		.nice_select{
+			width: 100%;
+		}
+	}
+	h5{
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		margin-right: 2rem;
+		font-weight: 500;
+
+		@media #{$sm}{
+			display: none;
+		}
+	}
+	.filter_btn{
+		position: relative;
+		overflow: visible;
+		@media #{$sm}{
+			width: 100%;
+		}
+		&.active{
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: -1rem;
+				left: 50%;
+				transform: translateX(-50%) rotate(45deg);
+				height: 2rem;
+				width: 2rem;
+				border-radius: 0.2rem;
+				background-color: #F3F3F3;
+			}
+
+			&:hover{
+				&::after{
+					background-color: #E6E6E6;
+				}
+			}
+		}
+	}
+	.check_box_wrapper{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		border: 0.1rem solid #D9D9D9;
+		padding: 1rem 0;
+		border-radius: 0.4rem;
+		margin-top: 2rem;
+		@media #{$sm}{
+			display: block;
+			max-height: 22rem;
+			overflow: auto;
+		}
+		.check_wrap{
+			margin: 1rem 2rem;
+		}
+	}
+}
+.check_wrap{
+	input{
+		display: none;
+
+		&:checked{
+			+ label{
+				span{
+					border-color: $theme-color;
+
+					&::before{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	label{
+		position: relative;
+		padding-left: 4rem;
+		cursor: pointer;
+		color: #3E4148;
+		display: inline-block;
+		span{
+			height: 2.5rem;
+			width: 2.5rem;
+			border: 0.15rem solid #A2A2A2;
+			border-radius: 0.4rem;
+			position: absolute;
+			left: 0;
+			top: -0.5rem;
+
+			&::before{
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 43%;
+				transform: translate(-50%, -50%) rotate(-45deg);
+				height: 0.5rem;
+				width: 1rem;
+				border-left: 0.2rem solid $theme-color;
+				border-bottom: 0.2rem solid $theme-color;
+				opacity: 0;
+			}
+		}
+	}
+}
+#filter{
+	display: none;
+	margin-top: 0 !important;
+}
+
+.slider{
+	@media #{$sm}{
+		marign-right: -3rem;
+		width: calc(100% + 3rem);
+
+		.owl-stage{
+			padding-left: 0 !important;
+		}
+	}
+}
+.close_icon{
+	width: 1.66rem;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+}

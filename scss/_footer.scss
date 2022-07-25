@@ -1,0 +1,149 @@
+footer{
+	.footer_top{
+		padding-top: 10rem;
+		padding-bottom: 3rem;
+		.footer_logo{
+			width: 15.6rem;
+			display: inline-block;
+			img{
+				width: 100%;
+			}
+		}
+		h4{
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			font-weight: 500;
+			padding-bottom: 1rem;
+			margin-top: 3rem;
+		}
+		p{
+			font-size: 1.4rem;
+			color: #A2A2A2;
+		}
+		ul{
+			li{
+				line-height: 1.1;
+				margin-top: 1rem;
+				a{
+					color: $black;
+					transition: 0.3s;
+					line-height: 1.1;
+
+					&:hover{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		.logo_list{
+			@media #{$md}{
+				&.v2{
+					max-width: 25rem;
+					@media #{$xs}{
+						max-width: 100%;
+					}
+				}
+			}
+			li{
+				display: inline-block;
+				margin-right: 1rem;
+				max-width: 10rem;
+				@media #{$md}{
+					max-width: 8rem;
+				}
+				@media #{$xs}{
+					max-width: 100%;
+				}
+			}
+		}
+		.certificate_wrap{
+			margin-top: 3rem;
+			>div{
+				margin-top: 3rem;
+			}
+			.certificate{
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width: 36rem;
+				margin-left: auto;
+				@media #{$md}{
+					margin-left: 0;
+				}
+				img{
+					width: 9.9rem;
+					margin-right: 2.2rem;
+				}
+				@media #{$sm}{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.footer_bottom{
+		background-color: #F3F3F3;
+		padding: 0.3rem 0 3.3rem;
+
+		p{
+			color: #A2A2A2;
+		}
+		ul{
+			@media #{$md}{
+				display: flex;
+				justify-content: space-between;
+			}
+			li{
+				display: inline-block;
+				&:not(:last-child){
+					margin-right: 3.2rem;
+				}
+				a{
+					color: #A2A2A2;
+					transition: 0.3s;
+					&:hover{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		.social_wrap{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			.icon_wrap{
+				a{
+					display: inline-block;
+					margin-left: 1.5rem;
+					transition: 0.3s;
+					&:hover{
+						opacity: 0.7;
+					}
+					img{
+						height: 2.5rem;
+					}
+				}
+			}
+		}
+		.row{
+			>div{
+				margin-top: 3rem;
+			}
+		}
+
+		@media #{$xs}{
+			text-align: center;
+
+			ul{
+				display: block;
+				li{
+					display: block;
+					margin-right: 0 !important;
+					margin-top: 1.2rem;
+				}
+			}
+			.social_wrap{
+				justify-content: center;
+			}
+		}
+	}
+}

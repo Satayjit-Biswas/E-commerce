@@ -1,0 +1,30 @@
+// Font Family
+$fonts: 'Signika Negative';
+
+
+// Colors ---------------
+$white: #fff;
+$black: #3E4148;
+$solid-black: #000;
+$gray: #BDBDBD;
+$theme-color: #6C9930;
+$orange: #EE7327;
+
+// Heading Color
+$heading-color: #222a3f;
+$body_bg: #FFFFFF;
+
+
+
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1600px)';
+$desktop-md: 'only screen and (min-width: 1400px) and (max-width: 1599.98px)';
+$laptop: '(min-width: 1200px) and (max-width: 1399.98px)';
+$mini-laptop : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$mdm: '(min-width: 992px)';
+$md:'(max-width: 991.98px)';
+$xs:'(max-width: 767px)';
+$sm: '(max-width: 575px)';
+
+

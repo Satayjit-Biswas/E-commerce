@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Kokku</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+
+    <!-- all css here -->
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/simplebar.css" rel="stylesheet" type="text/css" />
+    <link href="css/nice-number.css" rel="stylesheet" type="text/css" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="proloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+    <!-- header area -->
+    <header class="payment_header">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" class="img-fluid" alt="">
+                </a>
+            </div>
+            <ul class="step_menu d-none d-md-flex">
+                <li class="active d-none d-lg-block"><img src="img/check_circle.svg" alt="">Anmelden</li>
+                <li class="active"><img src="img/check_circle.svg" alt="">Versand und Zahlung</li>
+                <li class=" d-none d-lg-block"><img src="img/check_circle.svg" alt="">Prüfen und Bestellen</li>
+            </ul>
+            <a href="#" class="button gray_btn">Zurück zum Shop</a>
+        </div>
+    </header>
+    <main>
+        <div class="payment_wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mt_20">
+                        <h2 class="title_lg">Versand und zahlung</h2>
+                    </div>
+                    <div class="col-md-6 text-end mt_20 d-none d-md-block">
+                        <a href="#" class="button theme_btn">Weiter zur Bestellübersicht</a>
+                    </div>
+                </div>
+                <div class="row lg_gutter">
+                    <div class="col-lg-4">
+                        <div class="payment_box">
+                            <h4 class="title">
+                                REchnungsadresse 
+                                <a href="#billadd" data-toggle="modal">Aus Liste</a>
+                            </h4>
+                            <form action="#" class="row">
+                                <div class="col-lg-12 col-sm-6 mt_30">
+                                    <div class="input_wrap">
+                                        <span class="small_text">Vorname*</span>
+                                        <input type="text" value="Marianne" class="valid">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-6 mt_25">
+                                    <div class="input_wrap">
+                                        <span class="small_text">Nachname*</span>
+                                        <input type="text" value="Müller" class="valid">
+                                    </div>
+                                </div>                        
+                                <div class="col-lg-8 col-sm-6 mt_25">
+                                    <div class="input_wrap">
+                                        <span class="small_text">Straße*</span>
+                                        <input type="text" value="Musterstraße" class="valid">
+                                    </div>
+                                </div>                        
+                                <div class="col-lg-4 col-sm-6 mt_25">
+                                    <div class="input_wrap">
+                                        <span class="small_text">Haus-Nr.*</span>
+                                        <input type="text" value="80" class="valid">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mt_25">
+                                    <div class="input_wrap">
+                                        <span class="small_text">PLZ*</span>
+                                        <input type="text" value="52457" class="valid">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-6 mt_25">
+                                    <div class="input_wrap">
+                                        <span class="small_text">Ort*</span>
+                                        <input type="text" value="Musterstadt" class="valid">
+                                    </div>
+                                </div>                         
+                                <div class="col-12 mt_25">
+                                    <div class="input_wrap">
+                                        <select class="nice_select pt-0" style="display: none;">
+                                            <option>Deutschland</option>
+                                            <option>English</option>
+                                            <option>Frence</option>
+                                        </select>
+                                    </div>
+                                    <span class="small_text mt_10">* Pflichtfeld</span>
+                                </div>
+                                <div class="col-12 mt_25 mb_30">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="checks">
+                                        <label class="small_text" for="checks"><span></span> Rechnungsadresse entspricht meiner Lieferadresse.</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="payment_box">
+                            <h4 class="title">Zahlungsart wählen</h4>
+                            <div class="radio_input mt_30">
+                                <input type="radio" checked="" name="payment" id="rdo1">
+                                <label for="rdo1" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment1.png" alt="">
+                                        </div>
+                                        <p>PayPal</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>
+
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment" id="rdo2">
+                                <label for="rdo2" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment2.png" alt="">
+                                        </div>
+                                        <p>Lastschrift</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>                                                
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment" id="rdo3">
+                                <label for="rdo3" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment3.png" alt="">
+                                        </div>
+                                        <p>Kreditkarte</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>                                                
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment" id="rdo4">
+                                <label for="rdo4" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment4.png" alt="">
+                                        </div>
+                                        <p>Kauf auf Rechnung</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>                                                
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment" id="rdo5">
+                                <label for="rdo5" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment5.png" alt="">
+                                        </div>
+                                        <p>Vorkasse per Überweisung</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>                                                
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment" id="rdo6">
+                                <label for="rdo6" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment6.png" alt="">
+                                        </div>
+                                        <p>Klarna/Sofortüberweisung</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="payment_box">
+                            <h4 class="title">Versandart wählen</h4>
+                            <div class="freedging_box mt_30">
+                                <img src="img/ios.svg" alt="">
+                                <p>
+                                    Kühlversand für gute Qualität  |  1.89 € 
+                                    <a href="#freedge" data-toggle="modal">
+                                        <img src="img/info4.svg" alt="">
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment2" id="rdo22">
+                                <label for="rdo22" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment7.png" alt="">
+                                        </div>
+                                        <p>DHL GoGreen  |  4.90 €</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>                             
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment2" id="rdo23">
+                                <label for="rdo23" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment8.png" alt="">
+                                        </div>
+                                        <p>DPD CO₂-neutral  |  4.90 €</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>                             
+                            <div class="radio_input mt_20">
+                                <input type="radio" name="payment2" id="rdo24">
+                                <label for="rdo24" class="label_box">
+                                    <div class="d-flex align-items-center payment_logo_wrap">
+                                        <div class="payment_icon">
+                                            <img src="img/payment9.png" alt="">
+                                        </div>
+                                        <p>DPD Express  |  9.90 €<br> keine Samstagszustellung</p>
+                                    </div>
+                                    <span class="radio_box"></span>
+                                </label>
+                            </div>
+                            <div class="check_wrap mt_20">
+                                <input type="checkbox" id="checks1">
+                                <label class="small_text" for="checks1"><span></span> Ich möchte, dass meine E-Mail-Adresse an den Versanddienstleister übergeben wird. </label>
+                            </div>
+                            <h2 class="title_sm mt_30">VERSANDDATUM</h2>  
+                            <div class="radio_input mt_15">
+                                <input type="radio" name="payment2" id="pay1">
+                                <label class="small_text d-flex align-items-center black" for="pay1"><span class="radio_box mr_15"></span> Versand am Montag, den 09.05.2022</label>
+                            </div>                            
+                            <div class="radio_input mt_15">
+                                <input type="radio" name="payment2" id="pay2">
+                                <label class="small_text d-flex black" for="pay2">
+                                    <span class="radio_box mr_15"></span> 
+                                    <span>
+                                        Versand noch heute, falls du diesen Artikel<br class="d-none d-lg-block"> innerhalb von <span class="medium">1 Std. und 2 Min.</span> bestellst und<br class="d-none d-md-block"> direkt oder per Rechnung bezahlst.
+                                        <span class="info_wrap">
+                                            <img src="img/info5.svg" alt="">
+                                            <span class="tooltip_box">
+                                                <span class="title">ES BEFINDEN SICH KÜHLARTIKEL IN DEINER BESTELLUNG</span>
+                                                <span>Wenn du diese Option wählst, versenden wir dein Paket auf ausdrücklichen Wunsch zum angegebenen Termin - du trägst dabei das Risiko allein. Bitte beachte, dass DHL und DPD eine Lieferdauer von einem oder zwei Tagen nicht gewährleisten können.</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt_30 d-md-none">
+                        <a href="#" class="button theme_btn w-100">Weiter zur Bestellübersicht</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <ul>
+                            <li><a href="#">Datenschutzerklärung</a></li>
+                            <li><a href="#">Widerrufsrecht</a></li>
+                            <li><a href="#">Impressum</a></li>
+                            <li><a href="#cookies" data-toggle="modal">Cookie-Einstellungen</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-5 order-md-3">
+                        <div class="social_wrap">
+                            <p>Folge uns auch bei</p>
+                            <div class="icon_wrap">
+                                <a href="#"><img src="img/facebook.svg" alt=""></a>
+                                <a href="#"><img src="img/instagram.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-7 order-md-2 order-lg-1">
+                        <p>© kokku GmbH 2022.<br class="d-sm-none"> Alle Rechte vorbehalten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- overlay -->
+    <div class="overlay v2"></div>
+
+    <!-- cookies modal-->
+    <div class="modal" id="cookies">
+        <div class="modal_wrap">
+            <div class="modal_content">
+                <div class="modal_body">
+                    <h4 class="title">VERWALTE DEINE COOKIE-EINSTELLUNGEN</h4>
+                    <form action="#">
+                        <div class="check_wrap">
+                            <input type="checkbox" checked disabled id="chk1">
+                            <label for="chk1">
+                                <span class="check"></span>
+                                <h5>Erforderlich (notwendig)</h5>
+                                <p>Diese Cookies sind notwendig, damit Grundfunktionen von kokku.de für dich verfügbar sind. Sie ermöglichen dir beispielsweise, die Webseite zu navigieren und auf wichtige Bereiche wie deinen Warenkorb und mehr sicher zugreifen zu können.</p>
+                            </label>
+                        </div>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="chk2">
+                            <label for="chk2">
+                                <span class="check"></span>
+                                <h5>Benutzereinstellungen</h5>
+                                <p>Diese Cookies helfen uns dabei, uns an deine Aktivität auf der Webseite zu erinnern, um dir ein optimales Kundenerlebnis zu bieten. Dadurch speichert die Webseite von dir getroffene oder verworfene Auswahlen, um bestimmte Interaktionen wie die Produktsuche zu beschleunigen.</p>
+                            </label>
+                        </div>                        
+                        <div class="check_wrap">
+                            <input type="checkbox" id="chk3">
+                            <label for="chk3">
+                                <span class="check"></span>
+                                <h5>Analytics</h5>
+                                <p>Diese Cookies werden benötigt, um Daten zu sammeln, die uns bei der Verbesserung deines Einkaufserlebnisses auf der Webseite zu helfen. Anhang dieser Daten können wir verstehen, wie Benutzer Informationen finden und welche Bereiche der Webseite am hilfreichsten sind.</p>
+                            </label>
+                        </div>                        
+                        <div class="check_wrap">
+                            <input type="checkbox" id="chk4">
+                            <label for="chk4">
+                                <span class="check"></span>
+                                <h5>Werbung</h5>
+                                <p>Diese Cookies werden benötigt, um sicherzustellen, dass die Werbeanzeigen, die du von unseren Partnern siehst, deinen Bedürfnissen und Interessen entsprechen.</p>
+                            </label>
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="#" data-dimiss="modal" class="button theme_btn">ALLE COOKIES AKZEPTIEREN</a>
+                            <a href="#" data-dimiss="modal" class="button gray_btn">SPEICHERN & SCHLIESSEN</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- auto cookies modal-->
+    <div class="modal" id="autocookies">
+        <div class="modal_wrap align-items-end">
+            <div class="modal_content">
+                <div class="modal_body">
+                    <p>Wir und unsere Partner nutzen <a href="#">Cookies</a> und ähnliche Technologien, um dein Einkaufserlebnis zu verbessern, dir persönliche Werbung anzuzeigen und aus deinem Verhalten zu lernen, damit wir dir Produkte empfehlen können, die dir gefallen werden. Du kannst deine Cookie-Einstellungen jederzeit ändern. Weitere Informationen findest Du in unserer <a href="#">Datenschutzerklärung</a>.</p>
+                    <div class="btn_wrap">
+                        <a href="#" data-dimiss="modal" class="button theme_btn">ALLE COOKIES AKZEPTIEREN</a>
+                        <a href="#cookies" data-toggle="modal" class="button gray_btn">COOKIE-EINSTELLUNGEN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- billing address modal -->
+    <div class="modal sm_modal" id="billadd">
+        <div class="modal_wrap">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <h4 class="justify-content-between">REchnungsadresse <a href="#bookadd" data-toggle="modal">Aus Liste</a></h4>
+                </div>
+                <div class="modal_body">
+                    <form action="#" class="row">
+                        <div class="col-12 mt_10">
+                            <div class="input_wrap">
+                                <span class="small_text">Vorname*</span>
+                                <input type="text" value="Marianne" class="valid">
+                            </div>
+                        </div>
+                        <div class="col-12 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Nachname*</span>
+                                <input type="text" value="Müller" class="valid">
+                            </div>
+                        </div>                        
+                        <div class="col-sm-8 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Straße*</span>
+                                <input type="text" value="Musterstraße" class="valid">
+                            </div>
+                        </div>                        
+                        <div class="col-sm-4 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Haus-Nr.*</span>
+                                <input type="text" value="80" class="valid">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">PLZ*</span>
+                                <input type="text" value="52457" class="valid">
+                            </div>
+                        </div>
+                        <div class="col-sm-8 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Ort*</span>
+                                <input type="text" value="Musterstadt" class="valid">
+                            </div>
+                        </div>                         
+                        <div class="col-12 mt_25">
+                            <div class="input_wrap">
+                                <select class="nice_select pt-0">
+                                    <option>Deutschland</option>
+                                    <option>English</option>
+                                    <option>Frence</option>
+                                </select>
+                            </div>
+                            <span class="small_text mt_10">* Pflichtfeld</span>
+                        </div>
+                        <div class="col-12 mt_25">
+                            <button type="submit" class="button gray_btn w-100">Änderungen SPEICHERN</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- shipping address modal -->
+    <div class="modal sm_modal" id="shipadd">
+        <div class="modal_wrap">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <h4 class="justify-content-between">Lieferadresse <a href="#bookadd" data-toggle="modal">Aus Liste</a></h4>
+                </div>
+                <div class="modal_body">
+                    <form action="#" class="row">
+                        <div class="col-12 mt_10">
+                            <div class="input_wrap">
+                                <span class="small_text">Vorname*</span>
+                                <input type="text" value="Marianne" class="valid">
+                            </div>
+                        </div>
+                        <div class="col-12 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Nachname*</span>
+                                <input type="text" value="Müller" class="valid">
+                            </div>
+                        </div>                        
+                        <div class="col-sm-8 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Straße*</span>
+                                <input type="text" value="Musterstraße" class="valid">
+                            </div>
+                        </div>                        
+                        <div class="col-sm-4 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Haus-Nr.*</span>
+                                <input type="text" value="80" class="valid">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">PLZ*</span>
+                                <input type="text" value="52457" class="valid">
+                            </div>
+                        </div>
+                        <div class="col-sm-8 mt_25">
+                            <div class="input_wrap">
+                                <span class="small_text">Ort*</span>
+                                <input type="text" value="Musterstadt" class="valid">
+                            </div>
+                        </div>                         
+                        <div class="col-12 mt_25">
+                            <div class="input_wrap">
+                                <select class="nice_select pt-0">
+                                    <option>Deutschland</option>
+                                    <option>English</option>
+                                    <option>Frence</option>
+                                </select>
+                            </div>
+                            <span class="small_text mt_10">* Pflichtfeld</span>
+                        </div>
+                        <div class="col-12 mt_25">
+                            <button type="submit" class="button gray_btn w-100">Änderungen SPEICHERN</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- book address modal -->
+    <div class="modal sm_modal" id="bookadd">
+        <div class="modal_wrap">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <h4>Mein Adressbuch</h4>
+                    <button type="button" class="close">
+                        <img src="img/black_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <div class="input_wrap standard mt_10">
+                        <span class="small_text">Standard</span>
+                        <input type="text" value="Musterstraße 80, 52457 Musterstadt" class="valid"> 
+                    </div>                    
+                    <div class="input_wrap mt_25">
+                        <input type="text" value="Großer Weg 101, 32335 Burgdorf"> 
+                    </div>                    
+                    <div class="input_wrap mt_25">
+                        <input type="text" value="Großer Weg 101, 32335 Burgdorf"> 
+                    </div>                    
+                    <div class="input_wrap mt_25">
+                        <input type="text" value="Großer Weg 101, 32335 Burgdorf"> 
+                    </div>                    
+                    <div class="input_wrap mt_25">
+                        <input type="text" value="Großer Weg 101, 32335 Burgdorf"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- freedge modal -->
+    <div class="modal sm_modal" id="freedge">
+        <div class="modal_wrap">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <h4><img src="img/ios.svg" alt=""> KÜHLVERSAND</h4>
+                    <button type="button" class="close">
+                        <img src="img/black_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <p>Um eine optimale Qualität deiner bestellten Artikel garantieren zu können, verschicken wir deine Ware per Kühlversand. Die Artikel werden dann in einer Thermoverpackung mit einem Mehrwegkühlakku geliefert. Falls für deine Bestellung mehr als eine Thermoverpackung nötig ist, übernehmen wir die Mehrkosten. Kühlversand (+ 1.89 €)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

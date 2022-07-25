@@ -1,0 +1,160 @@
+.back_btn{
+	box-shadow: 0 0 0 0.1rem #D9D9D9;
+	line-height: 1;
+	display: inline-block;
+	color: $black !important;
+	border-radius: 0.4rem;
+	padding: 1.4rem 2.4rem 1.2rem;
+	font-weight: 500 !important;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	@include transition(0.3s);
+	cursor: pointer;
+
+	&::before{
+		position: absolute;
+		content: '';
+		z-index: -1;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 0;
+		background-color: #F3F3F3;
+		@include transition(0.3s);
+		border-radius: 0.4rem;
+	}
+	&:hover{
+		box-shadow: 0 0 0 0.1rem #F3F3F3;
+		&::before{
+			width: 100%;
+		}
+	}
+}
+
+.cart_btn{
+	@extend .back_btn;
+	background-color: $theme-color;
+	box-shadow: none;
+	color: $white !important;
+	font-size: 3rem;
+	font-weight: 400 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1.5rem;
+	line-height: 1.1;
+	margin-left: 1rem;
+
+	&::before{
+		background-color: #5B8128;
+	}
+
+	img{
+		width: 2.2rem;
+		margin-right: 1.2rem;
+	}
+
+	&.disabled{
+		pointer-events: none;
+		background-color: #D9D9D9;
+	}
+}
+.button{
+	@extend .cart_btn;
+	background-color: $orange;
+	box-shadow: none;
+	text-transform: uppercase;
+	min-width: 22rem;
+	font-size: 1.6rem !important;
+	font-weight: 500 !important;
+	margin-left: 0;
+	display: inline-flex;
+	padding: 1.4rem 1.5rem 1.25rem;
+	border: none;
+
+	&.black_btn{
+		background-color: #3E4148;
+		&::before{
+			background-color: #2F3136;
+		}
+	}
+
+	&:hover{
+		box-shadow: none;
+
+		img{
+			width: 4.7rem;
+			padding-left: 2.8rem
+		}
+	}
+	&::before{
+		background-color: #CE6220;
+	}
+
+	img{
+		transition: 0.3s;
+		width: 0;
+		margin-right: 0;
+	}
+}
+.gray_btn{
+	@extend .cart_btn;
+	padding: 1.4rem 1.5rem;
+	background-color: #F3F3F3;
+	color: $black !important;
+	box-shadow: none;
+	display: inline-flex;
+	text-transform: uppercase;
+	font-size: 1.6rem !important;
+	&:hover{
+		box-shadow: none;
+	}
+	&::before{
+		background-color: #E6E6E6;
+	}
+	img{
+		width: 1.8rem;
+		margin-right: 1rem;
+	}
+}
+.button{
+	&.theme_btn{
+		background-color: $theme-color;
+		&::before{
+			background-color: #5B8128;
+		}
+	}
+}
+
+.button{
+	&.solid_gray{
+		background-color: #777777;
+		&::before{
+			background-color: #656565;
+		}
+	}
+}
+.btn_wrap{
+	padding-top: 3rem;
+	.button{
+		margin-top: 3rem;
+		&:first-child{
+			margin-right: 1rem;
+		}
+	}
+}
+.rating{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+
+	img{
+		width: 1.7rem;
+
+		&:not(:last-child){
+			margin-right: 0.5rem;
+		}
+	}
+}

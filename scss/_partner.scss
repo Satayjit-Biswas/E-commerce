@@ -1,0 +1,32 @@
+.partner_area{
+	background-color: rgba(#F0F0EC, 0.7);
+	padding: 7.5rem 0 8rem;
+	text-align: center;
+	.title{
+		margin-bottom: 3.4rem;
+	}
+	img{
+		mix-blend-mode: multiply;
+		max-width: 13.3rem;
+	}
+	.owl-stage{
+		display: flex;
+		align-items: center;
+	}
+	.owl-nav{
+		button{
+			background-color: $white;
+			color: #BDBDBD;
+		}
+	}
+	.partner_slider{
+		@media #{$md}{
+			padding-left: 10rem;
+			padding-right: 10rem;
+		}		
+		@media #{$sm}{
+			padding-left: 0rem;
+			padding-right: 0rem;
+		}
+	}
+}

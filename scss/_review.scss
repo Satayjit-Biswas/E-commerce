@@ -1,0 +1,73 @@
+.google_review{
+	width: 12.5rem;
+	background: #fff;
+	box-shadow: 0 .5rem 1.5rem #00000029;
+	border: .1rem solid #F0F0F0;
+	border-radius: .8rem;
+	display: block;
+	text-align: center;
+	position: fixed;
+	right: 3rem;
+	bottom: 5rem;
+	color: #656565;
+	font-size: 1.2rem;
+	padding: 1.2rem;
+	z-index: 10;
+	.google_img{
+		width: 4.9rem;
+	}
+	.dooted_img{
+		display: block;
+		margin-left: auto;
+		margin-bottom: 1.5rem;
+		width: 1.7rem;
+	}
+	.rating_wrap{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #FBBC05;
+		border-bottom: 1px solid #F0F0F0;
+		margin-top: 1.5rem;
+		margin-bottom: 0.6rem;
+		padding-bottom: 1rem;
+
+		span{
+			font-size: 1.6rem;
+			font-weight: 700;
+			margin-right: 0.3rem;
+			line-height: 1;
+		}
+		.rating{
+			margin-bottom: 0;
+			img:not(:last-child) {
+			    margin-right: 0.2rem;
+			}
+			img {
+				width: 1.3rem;
+			}
+		}
+	}
+
+	@media #{$xs}{
+		font-size: 1rem;
+	    width: 9.5rem;
+	    right: 2rem;
+	    bottom: 2rem;
+	    padding: 0.5rem;
+	    line-height: 1.2;
+
+		.rating_wrap{
+			flex-direction: column;
+			border-bottom: none;
+			padding-bottom: 0;
+			margin-top: 1rem;
+
+			span{
+				margin-right: 0;
+				margin-bottom: 0.5rem;
+				font-size: 2rem;
+			}
+		}
+	}
+}
